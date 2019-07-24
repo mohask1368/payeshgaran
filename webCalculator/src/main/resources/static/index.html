@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="JavaSript.js"></script>
+</head>
+<body>
+<div id="Element">
+<input id="textBox" type="text" style="width:214px"><br/><br/>
+
+
+
+
+<table id="table">
+    <tr>
+        <td><button id="number" style="height:50px;width:50px" onclick=backspace()><-</button></td>
+        <td><button style="height:50px;width:50px">CE</button></td>
+        <td><button style="height:50px;width:50px" onclick="cleanTextBox()" >C</button></td>
+        <td><button style="height:50px;width:50px">%</button></td>
+    </tr>
+    <tr>
+        <td><button id="number7" style="height:50px;width:50px" onclick="addToTextBox(7)"/>7</td>
+        <td><button id="number8" style="height:50px;width:50px" onclick="addToTextBox(8)"/>8</td>
+        <td><button id="number9" style="height:50px;width:50px" onclick="addToTextBox(9)"/>9</td>
+        <td><button id="/" style="height:50px;width:50px" onclick="addToTextBox('/')"/>/</td>
+    </tr>
+    <tr>
+        <td><button id="number4" style="height:50px;width:50px" onclick="addToTextBox(4)"/>4</td>
+        <td><button id="number5" style="height:50px;width:50px" onclick="addToTextBox(5)"/>5</td>
+        <td><button id="number6" style="height:50px;width:50px" onclick="addToTextBox(6)"/>6</td>
+        <td><button id="*" style="height:50px;width:50px" onclick="addToTextBox('*')"/>*</td>
+    </tr>
+    <tr>
+        <td><button id="number1" style="height:50px;width:50px" onclick="addToTextBox(1)"/>1</td>
+        <td><button id="number2" style="height:50px;width:50px" onclick="addToTextBox(2)"/>2</td>
+        <td><button id="number3" style="height:50px;width:50px" onclick="addToTextBox(3)"/>3</td>
+        <td><button id="+" style="height:50px;width:50px" onclick="addToTextBox('+')"/>+</td>
+    </tr>
+    <tr>
+        <td><button id="?" style="height:50px;width:50px">?</button></td>
+        <td><button id="number0" style="height:50px;width:50px" onclick="addToTextBox(0)"/>0</td>
+        <td><button id="." style="height:50px;width:50px" onclick="addToTextBox('.')"/>.</td>
+        <td><button id="enter" style="height:50px;width:50px" onclick="enter()"/>Enter</td>
+    </tr>
+</table>
+
+
+<h2>resut : </h2>
+</div>
+</body>
+</html>
