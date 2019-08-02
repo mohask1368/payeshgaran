@@ -16,7 +16,7 @@ public class AskApplication {
         SpringApplication.run(AskApplication.class, args);
 
         Runtime rt = Runtime.getRuntime();
-        rt.exec("C:\\Users\\masgari\\AppData\\Local\\Mozilla Firefox\\firefox.exe http://localhost:7575/index.html");
+        rt.exec("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\" http://localhost:7575/index.html");
 
     }
 
