@@ -28,11 +28,11 @@ public void postToUser(){
 
 
 @PostMapping(value = "/test")
-public Integer getFromUser(@RequestBody String s) throws ScriptException {
+public String getFromUser(@RequestBody String s) throws ScriptException {
 
     ScriptEngineManager mgr = new ScriptEngineManager();
     ScriptEngine engine = mgr.getEngineByName("JavaScript");
-    Integer result = (Integer) engine.eval(s);
+    String result = engine.eval(s).toString();
 
 
 
