@@ -1,5 +1,4 @@
 function add() {
-    alert("add invoked")
 
     var name = document.getElementById("name").value;
     var family = document.getElementById("family").value;
@@ -19,7 +18,7 @@ $.ajax({
         console.log("error");
     },
     success : function (data) {
-        alert(data)
+
     }
 
     });

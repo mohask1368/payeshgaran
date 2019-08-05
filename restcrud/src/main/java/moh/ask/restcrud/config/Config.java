@@ -16,26 +16,23 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-@Configuration
-@EnableTransactionManagement
+
 public class Config {
 
-    @Autowired
-    private DataSource dataSource;
-
-    @Autowired
-    private Environment environment;
+//    @Autowired
+//    private DataSource dataSource;
 
 
 
-    @Bean(name = "sessionFactory")
-    public LocalSessionFactoryBean getSessionFactory() {            // creating session factory
-        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource);
-        sessionFactory.setPackagesToScan(new String[]{"moh.ask.restcrud.model"});
-      //  sessionFactory.setHibernateProperties(hibernateProperties());
-        return sessionFactory;
-    }
+
+//    @Bean(name = "sessionFactory")
+//    public LocalSessionFactoryBean getSessionFactory() {            // creating session factory
+//        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+//        sessionFactory.setDataSource(dataSource);
+//        sessionFactory.setPackagesToScan(new String[]{"moh.ask.restcrud.model"});
+//      //  sessionFactory.setHibernateProperties(hibernateProperties());
+//        return sessionFactory;
+//    }
 
 
 
@@ -49,14 +46,14 @@ public class Config {
     }*/
 
 
-    @Autowired
-    @Bean(name = "transactionManager")                      // creating transaction manager factory
-    public HibernateTransactionManager getTransactionManager(
-            SessionFactory sessionFactory) {
-        HibernateTransactionManager transactionManager = new HibernateTransactionManager(
-                sessionFactory);
-        return transactionManager;
-    }
+//    @Autowired
+//    @Bean(name = "transactionManager")                      // creating transaction manager factory
+//    public HibernateTransactionManager getTransactionManager(
+//            SessionFactory sessionFactory) {
+//        HibernateTransactionManager transactionManager = new HibernateTransactionManager(
+//                sessionFactory);
+//        return transactionManager;
+//    }
 
 
 
