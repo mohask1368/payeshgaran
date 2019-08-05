@@ -26,7 +26,7 @@ function enter() {
             console.log("error");
         },
         success: function (data) {
-        alert(data);
+        document.getElementById("textBox").value = data;
 
 
         }
