@@ -32,7 +32,7 @@ public String getFromUser(@RequestBody String s) throws ScriptException {
 
     ScriptEngineManager mgr = new ScriptEngineManager();
     ScriptEngine engine = mgr.getEngineByName("JavaScript");
-    String result =  engine.eval(s).toString();
+    String result = engine.eval(s).toString();
 
 
 
