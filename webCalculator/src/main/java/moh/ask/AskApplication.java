@@ -16,7 +16,7 @@ public class AskApplication {
 
 
         ProcessBuilder pb = new ProcessBuilder("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"" + " http://localhost:7575/index.html");
-        pb. redirectErrorStream(true);
+        pb.redirectErrorStream(true);
         pb.start();
 
 
