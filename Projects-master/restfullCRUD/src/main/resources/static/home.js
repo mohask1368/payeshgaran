@@ -12,14 +12,11 @@ function clean() {
     document.getElementById("name").value = null;
     document.getElementById("family").value = null;
 }
-function f() {
-    alert("f")
-}
+
 
 function sendToController(s){
 
 alert(s);
-
     $.ajax({
 
         type:'POST',
@@ -31,7 +28,7 @@ alert(s);
         },
         success: function (s) {
             console.log("success");
-            // document.getElementById("textBox").value = data;
+            alert("Saved");
 
 
         }
